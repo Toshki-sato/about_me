@@ -1,0 +1,209 @@
+table {
+    width: 100%;
+}
+table th {
+    background: #222;
+}
+table th,
+table td {
+    border: 1px solid #CCCCCC;
+    text-align: center;
+    padding: 15px;
+}
+
+/*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html,
+body {
+    height: 100%;
+    color: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    font: 1.6em/1.75 'Meiryo', sans-serif;
+}
+img{
+    border-radius: 15%;
+}
+img.logo {
+width: 250px;
+height: 115px;
+}
+img.logo:hover {
+  /*カーソルを合わせた時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+.logout{
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: white;/*ボタン色*/
+  color: black;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  float:right;
+}
+.logout{
+  display: inline-block;
+  padding: 0.5em 1em;
+  background:red;/*ボタン色*/
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  float:right;
+}
+.submit{
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: #0099FF;/*ボタン色*/
+  color: white;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  display:end;
+}
+.submit:hover {
+  /*カーソルを合わせた時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.flex-container {
+	display: flex;
+	justify-content: flex-start;
+}
+.logout:hover {
+  /*カーソルを合わせた時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+}
+.msg{
+    border-top: solid 0.1em white;
+    padding: 10px;
+}
+.day{
+    opacity: 0.5;
+}
+.name{
+    padding: 8px;
+}
+.msg-min1{
+    text-align:left;
+}
+.msg-min2{
+    text-align:right;
+}
+li.h4{
+    display: flex;
+}
+li:hover{
+    /*カーソルを合わせた時*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+  color: #00bcd4;
+}
+
+header{
+    border-radius: px;
+    padding: 10px;
+    color: white;
+}
+header {
+    background-color: #222222;
+}
+
+
+nav,
+main,
+aside {
+    border: solid 0.1em white;
+    border-radius: px;
+    padding: 10px;
+    color: white;
+}
+nav {
+    background-color: #333333;
+    min-width: 20%;
+    max-width: 20%;
+    -webkit-order: 0;
+    order: 0;
+}
+main {
+    background-color: #444444	;
+    color: white;
+    -webkit-order: 0;
+    min-width: 80%;
+    max-width: 80%;
+    order: 0;
+/*text-align: center;*/
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    nav{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    main{
+        min-width: 100%;
+        max-width: 100%;
+}
+}
+@media screen and (max-width: 480px) {
+    .flex-container {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    nav{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    main{
+        min-width: 100%;
+        max-width: 100%;
+}
+}
